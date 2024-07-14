@@ -3,8 +3,8 @@ function checkAnswer() {
     // The correct answer
     const correctAnswer = "4";
     
-    // Get the user's selected answer
-    const userAnswer = document.querySelector('input[name="quiz"]:checked');
+    selected = document.querySelector("input[name='quiz']:checked");
+    const userAnswer = selected.value;
     
     // Check if an answer was selected
     if (!userAnswer) {
